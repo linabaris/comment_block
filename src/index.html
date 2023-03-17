@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>My comment</title>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="wrapper">
+            <section class="comment-form">
+                <h2>Add Comments</h2>
+                <form class="comment-form form" action="submit">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input required name="name" type="text" placeholder="Your name" class="comment__name">
+                    </div>
+                    <div class="form-group">
+                        <label for="body">Comment:</label>
+                        <textarea required name="comment" id="comment" cols="30" rows="10" placeholder="Your comment..." class="comment__body"></textarea>
+                    </div> 
+                    <div class="form-group form-date">
+                        <label for="date">Set date</label>
+                        <!-- <input type="checkbox" class="check"> -->
+                        <input type="date" name="date" id="date" class="comment__date" max="2023-03-30">
+                    </div>              
+                    <button type="submit" class="btn">Add comment</button>
+                </form>
+            </section>
+            <section class="comments-list">
+                <h2>All Comments</h2>
+                <div class="comment-field"></div>
+            </section>
+        </div>
+    </main>
+</body>
+<script defer src="index.js"></script>
+</html>

@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 10px;
+}
+h2 {
+    font-style: italic;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+.wrapper {
+    margin: 1rem auto;
+    max-width: 1200px;
+    display: flex;
+    padding: 10px;
+}
+
+.btn {
+    width: 160px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #38bf42;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Tilt Neon';
+    font-size: 1.5rem;
+}
+.comment-form {
+    width: 50%;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+label {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+input {
+    width: 250px;
+    height: 30px;
+    outline-style: none;
+    border-radius: 5px;
+    border: 1px solid #DCDCDC;
+    padding: 3px;
+    font-size: 1.5rem;
+}
+input::placeholder, textarea::placeholder {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+.check {
+    width: 20px;
+    height: 20px;
+    outline-style: none;
+}
+textarea {
+    font-size: 1.5rem;
+    outline-style: none;
+    border-radius: 5px;
+    border: 1px solid #DCDCDC;
+    padding: 3px;
+}
+.comments-list{
+    width: 40%;
+}
+.comment__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.text-time {
+    margin: 0 0 0 auto;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+.text-name, .text-body {
+    font-size: 1.6rem;
+    background-color: #bcc9bc1a;
+}
+.action__icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2%;
+}
+.action__icons img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+/* .like-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    mask-image: url(../assets/like.svg) no-repeat center;
+} */
+
+.fa-sz {
+    font-size: 2rem;
+}
+.fa-regular, .fa-solid {
+    cursor: pointer;
+}
+.form-date {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5%;
+}
+.comment__date {
+    width: 15rem;
+    height: 2.3rem;
+    font-size: 1.5rem;
+}
+.error {
+    font-size: 1.5rem;
+    text-align: center;
+    color: red;
+}
